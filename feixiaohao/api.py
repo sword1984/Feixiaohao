@@ -37,7 +37,6 @@ def get_coin_info(code):
     response = requests.post(url=url, headers=headers,
                              data=json.dumps(payload))
 
-    print(response.json())
     if response.status_code == 200:
         response_dict = eval(response.text)
         return response_dict['data']

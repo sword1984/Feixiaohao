@@ -8,4 +8,8 @@
 
 from feixiaohao.api import *
 
-print(get_coin_info('btc'))
+print(len(get_code()))
+result = get_coin_info('mixmarvel')
+
+for key, value in result.items():
+    print(key, value)
